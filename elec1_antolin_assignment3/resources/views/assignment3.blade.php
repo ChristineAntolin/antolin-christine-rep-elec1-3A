@@ -47,7 +47,7 @@
             padding: 5px;
         }
         .section p {
-            margin-left: 30px; /* pasok ang paragraph */
+            margin-left: 30px; 
         }
                 
     </style>
