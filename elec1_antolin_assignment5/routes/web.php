@@ -2,12 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::match(['get','post'], '/evaluation', function () {
-    $name = request('name');
-    $prelim = request('prelim');
-    $midterm = request('midterm');
-    $final = request('final');
-    return view('evaluation', compact('name','prelim','midterm','final'));
+Route::get('/evaluation', function () {
+    $student = [
+        'name' => 'Christine Antolin',
+        'prelim' => 92,
+        'midterm' => 88,
+        'final' => 94
+    ];
+    return view('evaluation', ['data' => $student]);
 });
 
 
